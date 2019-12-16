@@ -1,0 +1,14 @@
+
+django-admin startproject studentManagementSystem
+django-admin startapp appname
+python manage.py runserver
+python manage.py startapp loginApp
+python manage.py makemigrations loginApp
+python manage.py migrate
+python manage.py shell
+
+
+
+
+
+

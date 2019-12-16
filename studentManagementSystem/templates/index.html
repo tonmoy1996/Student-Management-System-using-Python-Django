@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+<head>
+	<title>Index Page</title>
+	<link rel="stylesheet"  href="{% static 'css/style.css' %}">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+	
+	
+	<div class="container" align="center">
+	<h2>Login Form</h2>
+	<form method="POST" enctype="multipart/form-data" >
+	{{ form.as_p }}
+	{% csrf_token %}
+
+	<input type="submit" class="btn btn-primary" name="Update">
+	</form>
+	</div>
+<!--
+	<img src="{% static 'images/abc.jpg' %}" alt="Hridoy Pagi" height="200px" width="200px">
+-->
+</body>
+</html>
